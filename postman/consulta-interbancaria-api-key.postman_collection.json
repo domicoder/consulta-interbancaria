@@ -1,0 +1,353 @@
+{
+  "info": {
+    "_postman_id": "b9dcaa8a-e040-49bb-bfea-28eebb45ee98",
+    "name": "consulta-interbancaria-api-key",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "10223858"
+  },
+  "item": [
+    {
+      "name": "Tarea-Uso-Api-Key",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"API Key Desarrollo\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/api/api-keys",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "api",
+            "api-keys"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Tarea-Uso-Api-Key",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:4000/api/api-keys",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "api-keys"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Security-Policy",
+              "value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+            },
+            {
+              "key": "Cross-Origin-Opener-Policy",
+              "value": "same-origin"
+            },
+            {
+              "key": "Cross-Origin-Resource-Policy",
+              "value": "same-origin"
+            },
+            {
+              "key": "Origin-Agent-Cluster",
+              "value": "?1"
+            },
+            {
+              "key": "Referrer-Policy",
+              "value": "no-referrer"
+            },
+            {
+              "key": "Strict-Transport-Security",
+              "value": "max-age=31536000; includeSubDomains"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-DNS-Prefetch-Control",
+              "value": "off"
+            },
+            {
+              "key": "X-Download-Options",
+              "value": "noopen"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "SAMEORIGIN"
+            },
+            {
+              "key": "X-Permitted-Cross-Domain-Policies",
+              "value": "none"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "0"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "http://localhost:5173"
+            },
+            {
+              "key": "Vary",
+              "value": "Origin"
+            },
+            {
+              "key": "RateLimit-Policy",
+              "value": "100;w=900"
+            },
+            {
+              "key": "RateLimit-Limit",
+              "value": "100"
+            },
+            {
+              "key": "RateLimit-Remaining",
+              "value": "99"
+            },
+            {
+              "key": "RateLimit-Reset",
+              "value": "900"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "351"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"15f-ZAieEj9OQySEPzMAwogESo4z3T8\""
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 28 May 2026 23:23:35 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"message\": \"API Key created successfully. Save it now. It will not be shown again.\",\n    \"data\": {\n        \"apiKey\": {\n            \"id\": \"6b73ee6e-5187-4d7d-834a-51131f13f6b9\",\n            \"name\": \"Default API Key\",\n            \"keyPreview\": \"ci_test_77...4fa805\",\n            \"createdAt\": \"2026-05-28T23:23:35.461Z\"\n        },\n        \"plainApiKey\": \"ci_test_7748c29d413cf26de85495450ce3dd190383a0d2f0a53c326f0007261b4fa805\"\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Validar-cuenta",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "ci_test_7748c29d413cf26de85495450ce3dd190383a0d2f0a53c326f0007261b4fa805",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://localhost:4000/api/clientes/validar-cuenta/:numeroCuenta",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4000",
+          "path": [
+            "api",
+            "clientes",
+            "validar-cuenta",
+            ":numeroCuenta"
+          ],
+          "variable": [
+            {
+              "key": "numeroCuenta",
+              "value": "1234567890"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Validar-cuenta",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "ci_test_7748c29d413cf26de85495450ce3dd190383a0d2f0a53c326f0007261b4fa805",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "http://localhost:4000/api/clientes/validar-cuenta/:numeroCuenta",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "clientes",
+                "validar-cuenta",
+                ":numeroCuenta"
+              ],
+              "variable": [
+                {
+                  "key": "numeroCuenta",
+                  "value": "1234567890"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Security-Policy",
+              "value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+            },
+            {
+              "key": "Cross-Origin-Opener-Policy",
+              "value": "same-origin"
+            },
+            {
+              "key": "Cross-Origin-Resource-Policy",
+              "value": "same-origin"
+            },
+            {
+              "key": "Origin-Agent-Cluster",
+              "value": "?1"
+            },
+            {
+              "key": "Referrer-Policy",
+              "value": "no-referrer"
+            },
+            {
+              "key": "Strict-Transport-Security",
+              "value": "max-age=31536000; includeSubDomains"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-DNS-Prefetch-Control",
+              "value": "off"
+            },
+            {
+              "key": "X-Download-Options",
+              "value": "noopen"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "SAMEORIGIN"
+            },
+            {
+              "key": "X-Permitted-Cross-Domain-Policies",
+              "value": "none"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "0"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "http://localhost:5173"
+            },
+            {
+              "key": "Vary",
+              "value": "Origin"
+            },
+            {
+              "key": "RateLimit-Policy",
+              "value": "100;w=900"
+            },
+            {
+              "key": "RateLimit-Limit",
+              "value": "100"
+            },
+            {
+              "key": "RateLimit-Remaining",
+              "value": "96"
+            },
+            {
+              "key": "RateLimit-Reset",
+              "value": "869"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "95"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"5f-DEtGcK/N8TLbW2iOcwDMsaMv6cw\""
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 28 May 2026 23:25:36 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"data\": {\n        \"exists\": true,\n        \"id\": \"cli_001\",\n        \"nombre\": \"Juan Pérez\",\n        \"estado\": \"ACTIVA\"\n    }\n}"
+        }
+      ]
+    }
+  ]
+}
