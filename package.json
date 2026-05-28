@@ -1,0 +1,18 @@
+{
+  "name": "consulta-interbancaria",
+  "version": "1.0.0",
+  "description": "Monorepo – Consulta Interbancaria (backend + frontend)",
+  "private": true,
+  "workspaces": [
+    "apps/backend",
+    "apps/frontend"
+  ],
+  "scripts": {
+    "dev:backend": "npm run dev -w apps/backend",
+    "start:backend": "npm run start -w apps/backend"
+  },
+  "engines": {
+    "node": ">=22.14.0",
+    "npm": ">=11.5.2"
+  }
+}

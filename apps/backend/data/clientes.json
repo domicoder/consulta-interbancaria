@@ -1,0 +1,32 @@
+[
+  {
+    "id": "cli_001",
+    "numeroCuenta": "1234567890",
+    "nombre": "Juan Pérez",
+    "documento": "00112345678",
+    "celular": "8095551234",
+    "estado": "ACTIVA",
+    "createdAt": "2026-05-28T00:00:00.000Z",
+    "updatedAt": "2026-05-28T00:00:00.000Z"
+  },
+  {
+    "id": "cli_002",
+    "numeroCuenta": "9876543210",
+    "nombre": "María Rodríguez",
+    "documento": "00187654321",
+    "celular": "8295550000",
+    "estado": "BLOQUEADA",
+    "createdAt": "2026-05-28T00:00:00.000Z",
+    "updatedAt": "2026-05-28T00:00:00.000Z"
+  },
+  {
+    "id": "cli_003",
+    "numeroCuenta": "1122334455",
+    "nombre": "Carlos Gómez",
+    "documento": "40212345678",
+    "celular": "8495551111",
+    "estado": "INACTIVA",
+    "createdAt": "2026-05-28T00:00:00.000Z",
+    "updatedAt": "2026-05-28T00:00:00.000Z"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "92fc9ba9-bc0b-46d8-8a7b-3a3dfd98937c",
+    "name": "Test Key",
+    "keyHash": "$2a$10$CLcJ8AsNJilrf9EQ7LMP0.zxUoyXgFciZxrzSyyFbTI4khsJ6VVs6",
+    "keyPreview": "ci_test_7f...b7275b",
+    "isActive": true,
+    "lastUsedAt": "2026-05-28T23:20:16.179Z",
+    "createdAt": "2026-05-28T23:19:57.474Z",
+    "revokedAt": null
+  },
+  {
+    "id": "6b73ee6e-5187-4d7d-834a-51131f13f6b9",
+    "name": "Default API Key",
+    "keyHash": "$2a$10$MLAhAjJUdvAoO/h0lgWrb.kg/QO7tvErTlJdueHzhn1PwsQYOG/J2",
+    "keyPreview": "ci_test_77...4fa805",
+    "isActive": true,
+    "lastUsedAt": "2026-05-28T23:25:36.186Z",
+    "createdAt": "2026-05-28T23:23:35.461Z",
+    "revokedAt": null
+  }
+]
