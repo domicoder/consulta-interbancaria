@@ -9,10 +9,13 @@
   ],
   "scripts": {
     "dev:backend": "npm run dev -w apps/backend",
-    "start:backend": "npm run start -w apps/backend"
+    "start:backend": "npm run start -w apps/backend",
+    "dev:frontend": "npm run dev -w apps/frontend",
+    "build:frontend": "npm run build -w apps/frontend"
   },
   "engines": {
     "node": ">=22.14.0",
-    "npm": ">=11.5.2"
+    "npm": ">=11.5.2",
+    "vite": "^8.0.12"
   }
 }
