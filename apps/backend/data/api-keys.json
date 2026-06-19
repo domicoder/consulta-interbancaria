@@ -18,5 +18,25 @@
     "lastUsedAt": "2026-05-28T23:25:36.186Z",
     "createdAt": "2026-05-28T23:23:35.461Z",
     "revokedAt": null
+  },
+  {
+    "id": "c634fe38-0281-4b5b-a945-e331ad89af05",
+    "name": "darwin",
+    "keyHash": "$2a$10$Fa1xSiDVlvkvuS2QwHvEM.wtje1eVcK2Qmult0rhYwBp2vmrOmyS.",
+    "keyPreview": "ci_test_5f...4ed670",
+    "isActive": true,
+    "lastUsedAt": null,
+    "createdAt": "2026-06-11T15:28:32.261Z",
+    "revokedAt": null
+  },
+  {
+    "id": "5befb976-3fdc-4998-9b7e-76a95ed8006b",
+    "name": "Darts",
+    "keyHash": "$2a$10$mrSZm4pOyDgAqfS5G79T8.s6CkRQTe4UdDgzR07oPDz4xrRcA1FXO",
+    "keyPreview": "ci_test_88...81b18c",
+    "isActive": true,
+    "lastUsedAt": "2026-06-11T22:26:49.004Z",
+    "createdAt": "2026-06-11T22:26:31.736Z",
+    "revokedAt": null
   }
 ]
